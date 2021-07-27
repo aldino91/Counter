@@ -1,0 +1,73 @@
+html, body{
+    margin: 0 0;
+    padding: 0;
+}
+
+.container{
+    color: rgb(6, 88, 61);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 10px 10px;
+    box-shadow: 8px 5px 8px 5px rgb(216, 214, 214);
+    margin-top: 30px;
+}
+
+.counter{
+    color: chocolate;
+}
+
+.container-counter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.more{
+    width: 10%;
+    background: -webkit-linear-gradient(right, rgb(187, 55, 15), rgb(255, 166, 0));
+    border-radius: 10px;
+    border: none;
+}
+
+.less{
+    width: 10%;
+    background: -webkit-linear-gradient(left, rgb(44, 109, 248), rgb(126, 183, 216));
+    border-radius: 10px;
+    border: none;
+}
+
+.more:active, .less:active{
+    border: solid 2px white
+}
+.more:hover, .less:hover, .reset:hover{
+    opacity: 0.5;
+}
+.container-result{
+    width: 10%;
+    text-align: center;
+}
+
+.reset{
+    width: 20%;
+    padding: 5px 5px;
+    margin-bottom: 20px;
+    background: -webkit-linear-gradient(bottom, rgb(248, 177, 44), rgb(210, 216, 126));
+    border-radius: 10px 10px;
+    border: none;
+}
+
+@media screen and (max-width: 500px) {
+
+    .container{
+        width: 98%;
+        box-shadow: 0px 0px 0px 0px;
+    }
+    .more, .less{
+        width: 13%;
+    }
+}
