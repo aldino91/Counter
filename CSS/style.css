@@ -3,6 +3,10 @@ html, body{
     padding: 0;
 }
 
+.title{
+    text-align: center;
+}
+
 .container{
     color: rgb(6, 88, 61);
     display: flex;
@@ -32,6 +36,7 @@ html, body{
     background: -webkit-linear-gradient(right, rgb(187, 55, 15), rgb(255, 166, 0));
     border-radius: 10px;
     border: none;
+    margin-right: 4px;
 }
 
 .less{
@@ -39,10 +44,11 @@ html, body{
     background: -webkit-linear-gradient(left, rgb(44, 109, 248), rgb(126, 183, 216));
     border-radius: 10px;
     border: none;
+    margin-left: 4px;
 }
 
-.more:active, .less:active{
-    border: solid 2px white
+.more:focus:active, .less:focus:active{
+    border: solid 2px white;
 }
 .more:hover, .less:hover, .reset:hover{
     opacity: 0.5;
@@ -69,5 +75,13 @@ html, body{
     }
     .more, .less{
         width: 13%;
+    }
+
+    .more{
+        margin-right: 2px;
+    }
+
+    .less{
+        margin-left: 2px;
     }
 }
