@@ -32,25 +32,38 @@ html, body{
 }
 
 .more{
-    width: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+#moreOne , #moreFive, #moreTen{
+    width: 50%;
     background: -webkit-linear-gradient(right, rgb(187, 55, 15), rgb(255, 166, 0));
     border-radius: 10px;
     border: none;
     margin-right: 4px;
 }
 
+
 .less{
-    width: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#lessOne , #lessFive, #lessTen{
+    width: 50%;
     background: -webkit-linear-gradient(left, rgb(44, 109, 248), rgb(126, 183, 216));
     border-radius: 10px;
     border: none;
     margin-left: 4px;
 }
 
-.more:focus:active, .less:focus:active{
+#moreOne:focus:active,#moreFive:focus:active, #moreTen:focus:active, #lessOne:focus:active, #lessFive:focus:active, #lessTen:focus:active{
     border: solid 2px white;
 }
-.more:hover, .less:hover, .reset:hover{
+#moreOne:hover,#moreFive:hover,#moreTen:hover, #lessOne:hover, #lessFive:hover, #lessTen:hover, .reset:hover{
     opacity: 0.5;
 }
 .container-result{
@@ -58,13 +71,20 @@ html, body{
     text-align: center;
 }
 
-.reset{
+.containerReset{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#reset{
     width: 20%;
     padding: 5px 5px;
     margin-bottom: 20px;
     background: -webkit-linear-gradient(bottom, rgb(248, 177, 44), rgb(210, 216, 126));
     border-radius: 10px 10px;
     border: none;
+    cursor:pointer;
 }
 
 @media screen and (max-width: 500px) {
@@ -73,15 +93,20 @@ html, body{
         width: 98%;
         box-shadow: 0px 0px 0px 0px;
     }
-    .more, .less{
-        width: 13%;
-    }
-
+    
     .more{
         margin-right: 2px;
     }
 
     .less{
         margin-left: 2px;
+    }
+
+    #lessOne , #lessFive, #lessTen{
+        width: 25%;
+    }
+
+    #moreOne , #moreFive, #moreTen{
+        width: 25%;
     }
 }
